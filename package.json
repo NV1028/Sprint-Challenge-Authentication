@@ -4,8 +4,10 @@
   "description": "Authentication Sprint Challenge",
   "main": "index.js",
   "scripts": {
+    "test:watch": "jest --watch",
+    "test": "jest",
     "server": "nodemon -r dotenv/config index.js",
-		"start": "node index.js"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -27,10 +29,14 @@
     "helmet": "^3.22.0",
     "jsonwebtoken": "^8.5.1",
     "knex": "^0.20.15",
-    "sqlite3": "^4.2.0"
+    "sqlite3": "^4.2.0",
+    "uuid": "^8.0.0"
   },
   "devDependencies": {
+    "cross-env": "^7.0.2",
     "dotenv": "^8.2.0",
-    "nodemon": "^2.0.2"
+    "jest": "^26.0.1",
+    "nodemon": "^2.0.2",
+    "supertest": "^4.0.2"
   }
 }
